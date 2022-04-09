@@ -82,4 +82,9 @@ Run the test script
 ```bash
 bash test.sh
 ```
-Navigate to the vscode debug panel, select`Python: Attach` and run. Make sure that everything works well. 
+Navigate to the vscode debug panel, select `Python: Attach` and run. Make sure that everything works well. 
+
+## What about the actual debugging process?
+Now it is natural to focus on the real debugging process. I would like to elaborate on the `Step into` option. You can set `justMyCode: False` in the launch.json file to enable stepping into local packages and more in-depth debugging. 
+
+What's more, you may keep track of the `call stack` and `variables` on the debug panel. I would like to emphasize the `watch` option. You may add expression whose value you are interested in. Interestingly, you may also call certain functions in the watch expression. For example, when running test.sh and debugging via attaching, you may watch the expression `len(sys.argv)`, which should give you `3` as its value. Another commonly used trick is to hover your mouse over the variable. Its values should pop up accordingly.
