@@ -69,12 +69,13 @@ This means that we are instead using the debugpy module to launch our program. M
 Create a configuration in launch.json
 ```json
 {
-"name": "Python: Attach",
-"type": "python",
-"request": "attach",
-"connect": {
-    "host": "127.0.0.1",
-    "port": 5678
+    "name": "Python: Attach",
+    "type": "python",
+    "request": "attach",
+    "connect": {
+        "host": "127.0.0.1",
+        "port": 5678
+    }
 }
 ```
 Note that the `host` and `port` should match your scripts.
