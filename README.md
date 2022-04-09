@@ -84,7 +84,20 @@ Run the test script
 bash test.sh
 ```
 Navigate to the vscode debug panel, select `Python: Attach` and run. Make sure that everything works well. 
-
+### Debugging via Attach (import module style)
+Suppose that you have a script which implictly invokes a python process. In this case, the best practice is to "inject" the debugpy mechanism into the python code that you are interested in. Checkout the `debugpy_import_style.py`.
+```python
+import debugpy
+debugpy.listen(("127.0.0.1",5678))
+# this means that the debugger is listening at "127.0.0.1:5678", which is equivalent to the previous method
+debugpy.wait_for_client()
+# this is equivalent to the --wait-for-client argument
+import sys
+print("---Program Start---")
+print("This is a script to test passing cmd args.")
+breakpoint()
+print("The args are:", sys.argv[1:])
+```
 ## What about the actual debugging process?
 Now it is natural to focus on the real debugging process. I would like to elaborate on the `Step into` option. You can set `justMyCode: False` in the launch.json file to enable stepping into local packages and more in-depth debugging. 
 
