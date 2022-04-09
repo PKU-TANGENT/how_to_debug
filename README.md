@@ -1,6 +1,8 @@
 # How to Debug for NLP Purposes Decently
 This is a simple repo for demonstrating how to effectively debug python files.
 
+This tutorial is a detailed version. If you already have relevant background knowledge, a simpler version is [here]()
+
 You may try out the examples by cloning the repo.
 ```bash
 git clone https://github.com/PKU-TANGENT/how_to_debug.git
@@ -10,11 +12,11 @@ Suppose that the development environment is a server to be connected using ssh.
 ## Recommended prerequisites
 ### Locally
 1. `Vscode` for powerful extensions and decent ssh integrations. More specific list for extensions is as follows
-  - `Remote - SSH` (Note that the developer is Microsoft. )
+    - `Remote - SSH` (Note that the developer is Microsoft. )
 ### On Server
 1. `conda` for easy python environment management. `miniconda` is recommended specifically to save disk memory.
 2. `Vscode Extensions` for powerful debug support. Note that the following extensions are installed on server. This can be achieved by first connecting to the server using local ssh extension. (This process may be further explicated in another repo.) Then, search for the extensions and select `install in SSH`. The specified extensions are as follows:
-  -  `Python` (Note that the developer is Microsoft)
+    -  `Python` (Note that the developer is Microsoft)
 ## Getting Started
 I suggest testing directly using the `base` environment of conda. The package that we are using is [debugpy](https://github.com/microsoft/debugpy). The original repo README contains sufficient examples. We shall start by installing debugpy via pip.
 
