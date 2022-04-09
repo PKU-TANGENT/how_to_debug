@@ -1,7 +1,7 @@
 # How to Debug for NLP Purposes Decently
 This is a simple repo for demonstrating how to effectively debug python files.
 
-This tutorial is a detailed version. If you already have relevant background knowledge, a simpler version is [here]()
+This tutorial is a detailed version. If you already have relevant background knowledge, a simpler version is [here](https://github.com/PKU-TANGENT/how_to_debug/blob/main/simpler_version.md)
 
 You may try out the examples by cloning the repo.
 ```bash
